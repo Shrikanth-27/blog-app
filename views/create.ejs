@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    label {
+        margin-top: 10px;
+    }
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        box-sizing: border-box;
+    }
+    textarea {
+        height: 200px; /* Adjust the height as needed */
+    }
+    button {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <div class="create-blog-content">
+        <form action="/blogs" method="POST">
+            <label for="title>">Blog title</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="snippet">Blog snippet</label>
+            <input type="text" id="snippet" name="snippet" required>
+
+            <label for="body">Blog body</label>
+            <textarea id="body" required name="body"></textarea>
+
+            <button>Submit</button>
+        </form>
+    </div>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

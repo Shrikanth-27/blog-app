@@ -1,0 +1,25 @@
+{
+  
+  "name": "mern",
+  "version": "1.0.0",
+  "main": "global.js",
+  "scripts": {
+    
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon steam.js"
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "gh-pages": "^6.1.1",
+    "lodash": "^4.17.21",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.4"
+  }
+}
